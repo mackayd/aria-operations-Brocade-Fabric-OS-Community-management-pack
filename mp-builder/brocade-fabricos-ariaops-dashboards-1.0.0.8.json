@@ -1,0 +1,4363 @@
+{
+  "dashboards": [
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "b4f22448-ad8d-595b-a817-f0ab74ff5077",
+      "name": "Brocade Fabric OS/Brocade SAN Overview",
+      "namePath": "Brocade Fabric OS",
+      "rank": 1,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "4",
+                "resourceKindId": "resourceKind:id:4_::_",
+                "resourceKindName": "Brocade Fibre Channel Fabric"
+              },
+              {
+                "id": "2",
+                "resourceKindId": "resourceKind:id:2_::_",
+                "resourceKindName": "Brocade Fibre Channel Switch"
+              },
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              },
+              {
+                "id": "5",
+                "resourceKindId": "resourceKind:id:5_::_",
+                "resourceKindName": "Brocade Connected FC Endpoint"
+              },
+              {
+                "id": "1",
+                "resourceKindId": "resourceKind:id:1_::_",
+                "resourceKindName": "Brocade FC Transceiver"
+              },
+              {
+                "id": "0",
+                "resourceKindId": "resourceKind:id:0_::_",
+                "resourceKindName": "Brocade Environmental Sensor"
+              },
+              {
+                "id": "6",
+                "resourceKindId": "resourceKind:id:6_::_",
+                "resourceKindName": "Brocade Power Supply"
+              },
+              {
+                "id": "7",
+                "resourceKindId": "resourceKind:id:7_::_",
+                "resourceKindName": "Brocade Fan"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "SAN Environment"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "title": "SAN Environment",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "d6d87376-b23c-5c64-afcb-734522a53d32",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "906aa856-bc3b-515e-8122-d044c0607f6c",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "c215e2f9-e3c9-554c-897e-732997de72d2",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-12",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-13",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-4",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-5",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "25bd6ff4-ab6e-5696-988b-caeea1f496de",
+          "title": "Fabric and Switch Health",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-7",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_rate",
+                  "label": "Port In Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-8",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_rate",
+                  "label": "Port Out Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-9",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_crc_errors",
+                  "label": "Port In Crc Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-10",
+                  "isStringMetric": false,
+                  "metricKey": "port_link_failures",
+                  "label": "Port Link Failures",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-11",
+                  "isStringMetric": false,
+                  "metricKey": "port_bb_credit_zero",
+                  "label": "Port Bb Credit Zero",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "6d23b8f0-1ae5-5ec6-9d82-4ed347378857",
+          "title": "Port Traffic and Integrity",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-0",
+                  "isStringMetric": false,
+                  "metricKey": "sensor_temperature",
+                  "label": "Sensor Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-1",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_temperature",
+                  "label": "Transceiver Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-3",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_rx_power",
+                  "label": "Transceiver Rx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-2",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_tx_power",
+                  "label": "Transceiver Tx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-21",
+                  "isStringMetric": false,
+                  "metricKey": "fan_speed",
+                  "label": "Fan Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "resourceKindName": "Brocade Fan",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 10,
+            "x": 1,
+            "y": 26
+          },
+          "height": -1,
+          "id": "8bc04ea4-223e-535c-9b32-e7ba31f2ef2d",
+          "title": "Hardware Environment",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "d6d87376-b23c-5c64-afcb-734522a53d32"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "906aa856-bc3b-515e-8122-d044c0607f6c"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "c215e2f9-e3c9-554c-897e-732997de72d2"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "25bd6ff4-ab6e-5696-988b-caeea1f496de"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "c215e2f9-e3c9-554c-897e-732997de72d2",
+          "widgetIdReceiver": "25bd6ff4-ab6e-5696-988b-caeea1f496de"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "6d23b8f0-1ae5-5ec6-9d82-4ed347378857"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "c215e2f9-e3c9-554c-897e-732997de72d2",
+          "widgetIdReceiver": "6d23b8f0-1ae5-5ec6-9d82-4ed347378857"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "fa9df163-b0f9-5ad5-bbc0-4ce04052a0ca",
+          "widgetIdReceiver": "8bc04ea4-223e-535c-9b32-e7ba31f2ef2d"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "c215e2f9-e3c9-554c-897e-732997de72d2",
+          "widgetIdReceiver": "8bc04ea4-223e-535c-9b32-e7ba31f2ef2d"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "fd39f6c7-d967-5c34-98b3-f4b5522d3063",
+      "name": "Brocade Fabric OS/Brocade Fabric and Switch Summary",
+      "namePath": "Brocade Fabric OS",
+      "rank": 2,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "4",
+                "resourceKindId": "resourceKind:id:4_::_",
+                "resourceKindName": "Brocade Fibre Channel Fabric"
+              },
+              {
+                "id": "2",
+                "resourceKindId": "resourceKind:id:2_::_",
+                "resourceKindName": "Brocade Fibre Channel Switch"
+              },
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "Fabrics and Switches"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "title": "Fabrics and Switches",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "35139215-3562-5ea2-a67a-c4e0afa2c23b",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "5ab05c48-b539-550e-a671-8cc0c88c69e5",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "4c8f2256-1598-5f04-a7e0-376e6114a6a2",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-12",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-13",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-14",
+                  "isStringMetric": false,
+                  "metricKey": "badge|efficiency",
+                  "label": "Efficiency",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-4",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-5",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-6",
+                  "isStringMetric": false,
+                  "metricKey": "badge|efficiency",
+                  "label": "Efficiency",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "a61e5442-a358-5945-b11d-8451f2346226",
+          "title": "Fabric and Switch Status",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "08b8e796-44d4-50c5-9178-8ca8671ebaf1",
+                  "isStringMetric": false,
+                  "metricKey": "port_line_speed",
+                  "label": "Port Line Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "bit/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-7",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_rate",
+                  "label": "Port In Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-8",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_rate",
+                  "label": "Port Out Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "51496f85-12b7-59cd-970a-9b062578efa3",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_frame_rate",
+                  "label": "Port In Frame Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "frames/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "835f34a8-c72f-5686-bfb3-920e10884b1d",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_frame_rate",
+                  "label": "Port Out Frame Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "frames/s",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "498af658-4ba2-5665-93e0-e5bc17b14342",
+          "title": "Switch Port Throughput",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-9",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_crc_errors",
+                  "label": "Port In Crc Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-10",
+                  "isStringMetric": false,
+                  "metricKey": "port_link_failures",
+                  "label": "Port Link Failures",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "d2c0fd35-4ff4-5c71-af3f-4bad1ab44424",
+                  "isStringMetric": false,
+                  "metricKey": "port_loss_of_signal",
+                  "label": "Port Loss Of Signal",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "b27daf83-50d4-52ee-a23d-9bb3f8032065",
+                  "isStringMetric": false,
+                  "metricKey": "port_loss_of_sync",
+                  "label": "Port Loss Of Sync",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 10,
+            "x": 1,
+            "y": 26
+          },
+          "height": -1,
+          "id": "e4db117c-a4af-53e3-95e0-c91011d759f3",
+          "title": "Switch Port Error Hotspots",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "35139215-3562-5ea2-a67a-c4e0afa2c23b"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "5ab05c48-b539-550e-a671-8cc0c88c69e5"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "4c8f2256-1598-5f04-a7e0-376e6114a6a2"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "a61e5442-a358-5945-b11d-8451f2346226"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "4c8f2256-1598-5f04-a7e0-376e6114a6a2",
+          "widgetIdReceiver": "a61e5442-a358-5945-b11d-8451f2346226"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "498af658-4ba2-5665-93e0-e5bc17b14342"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "4c8f2256-1598-5f04-a7e0-376e6114a6a2",
+          "widgetIdReceiver": "498af658-4ba2-5665-93e0-e5bc17b14342"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "26d65bba-361d-5ae6-9660-169d25380d7e",
+          "widgetIdReceiver": "e4db117c-a4af-53e3-95e0-c91011d759f3"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "4c8f2256-1598-5f04-a7e0-376e6114a6a2",
+          "widgetIdReceiver": "e4db117c-a4af-53e3-95e0-c91011d759f3"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "82f24b89-e952-5f3c-b8a3-81ee99dc0738",
+      "name": "Brocade Fabric OS/Brocade Port Traffic",
+      "namePath": "Brocade Fabric OS",
+      "rank": 3,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "Fibre Channel Ports"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "title": "Fibre Channel Ports",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "f4781f1b-c209-5170-bc23-0a941be9af39",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "133697e7-ba1f-5eb7-8a8c-3f82a12c3063",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "48acc5b2-1c4c-5b1f-8d47-ade9dbac7618",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "08b8e796-44d4-50c5-9178-8ca8671ebaf1",
+                  "isStringMetric": false,
+                  "metricKey": "port_line_speed",
+                  "label": "Port Line Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "bit/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-7",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_rate",
+                  "label": "Port In Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-8",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_rate",
+                  "label": "Port Out Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "66f3c614-014c-524d-bcbb-656d03969584",
+          "title": "FC Throughput",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "51496f85-12b7-59cd-970a-9b062578efa3",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_frame_rate",
+                  "label": "Port In Frame Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "frames/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "835f34a8-c72f-5686-bfb3-920e10884b1d",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_frame_rate",
+                  "label": "Port Out Frame Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "frames/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "9b064343-93b8-53b5-ba3a-4ba58f629f89",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_frames",
+                  "label": "Port In Frames",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "be3b62b2-3dfc-592c-979a-057bcf39cedf",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_frames",
+                  "label": "Port Out Frames",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "cdc87ae6-803c-57d5-a82e-06b8e4b29a82",
+          "title": "FC Frame Rates",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "ca8ff334-7f07-5ee6-a966-8ee8deb0556a",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_octets",
+                  "label": "Port In Octets",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "byte",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "d3858167-a940-5ade-9441-ca00499c1d7e",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_octets",
+                  "label": "Port Out Octets",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "byte",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 10,
+            "x": 1,
+            "y": 26
+          },
+          "height": -1,
+          "id": "503eeb68-4627-5390-a1e9-1fa2cc69a8d7",
+          "title": "FC Traffic Totals",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "f4781f1b-c209-5170-bc23-0a941be9af39"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "133697e7-ba1f-5eb7-8a8c-3f82a12c3063"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "48acc5b2-1c4c-5b1f-8d47-ade9dbac7618"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "66f3c614-014c-524d-bcbb-656d03969584"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "48acc5b2-1c4c-5b1f-8d47-ade9dbac7618",
+          "widgetIdReceiver": "66f3c614-014c-524d-bcbb-656d03969584"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "cdc87ae6-803c-57d5-a82e-06b8e4b29a82"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "48acc5b2-1c4c-5b1f-8d47-ade9dbac7618",
+          "widgetIdReceiver": "cdc87ae6-803c-57d5-a82e-06b8e4b29a82"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "c8d49268-ae77-5dd9-84fe-9782ac5cebdf",
+          "widgetIdReceiver": "503eeb68-4627-5390-a1e9-1fa2cc69a8d7"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "48acc5b2-1c4c-5b1f-8d47-ade9dbac7618",
+          "widgetIdReceiver": "503eeb68-4627-5390-a1e9-1fa2cc69a8d7"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "d4e7cd49-35cb-5822-96c7-6be8118e7cd5",
+      "name": "Brocade Fabric OS/Brocade Port Errors and Congestion",
+      "namePath": "Brocade Fabric OS",
+      "rank": 4,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "Fibre Channel Ports"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "title": "Fibre Channel Ports",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "d4b7af94-1011-529f-aed7-281befd3124b",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "75b1768f-a0ae-5fb9-8a71-458373baeb17",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "d8493497-c9d4-5cb2-91d5-f89e99dd665b",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-9",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_crc_errors",
+                  "label": "Port In Crc Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "7edc09a9-0ac9-5e6f-b4bc-3cbcd1ec6fcd",
+                  "isStringMetric": false,
+                  "metricKey": "port_invalid_transmission_words",
+                  "label": "Port Invalid Transmission Words",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "654a528d-2e1d-5e56-971a-4d9164f7c65a",
+                  "isStringMetric": false,
+                  "metricKey": "port_invalid_ordered_sets",
+                  "label": "Port Invalid Ordered Sets",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "924ccf13-0676-5e3b-a88f-ec58ccf7292b",
+                  "isStringMetric": false,
+                  "metricKey": "port_pcs_block_errors",
+                  "label": "Port Pcs Block Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "a656bad3-beeb-56c8-a1e5-f5f511555a5e",
+                  "isStringMetric": false,
+                  "metricKey": "port_fec_uncorrected",
+                  "label": "Port Fec Uncorrected",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "ac1414bf-91e4-5351-9a96-2633b89c6b8a",
+          "title": "Data Integrity Errors",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-10",
+                  "isStringMetric": false,
+                  "metricKey": "port_link_failures",
+                  "label": "Port Link Failures",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "d2c0fd35-4ff4-5c71-af3f-4bad1ab44424",
+                  "isStringMetric": false,
+                  "metricKey": "port_loss_of_signal",
+                  "label": "Port Loss Of Signal",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "b27daf83-50d4-52ee-a23d-9bb3f8032065",
+                  "isStringMetric": false,
+                  "metricKey": "port_loss_of_sync",
+                  "label": "Port Loss Of Sync",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "4d2c4c42-b3b4-5095-8f80-40e457761e2a",
+                  "isStringMetric": false,
+                  "metricKey": "port_state_transition_count",
+                  "label": "Port State Transition Count",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "59808510-ee3b-529f-ad06-9a1f9e109ce9",
+          "title": "Link Stability",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-11",
+                  "isStringMetric": false,
+                  "metricKey": "port_bb_credit_zero",
+                  "label": "Port Bb Credit Zero",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "c4281d2b-f55d-5fff-a316-2065be414db7",
+                  "isStringMetric": false,
+                  "metricKey": "port_input_buffer_full",
+                  "label": "Port Input Buffer Full",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "23a377fd-fe7b-5334-8568-4dcfbc0def0a",
+                  "isStringMetric": false,
+                  "metricKey": "port_class_3_discards",
+                  "label": "Port Class 3 Discards",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "46585c94-f99e-5f46-aedb-1759c6e5049f",
+                  "isStringMetric": false,
+                  "metricKey": "port_congestion_primitive_in",
+                  "label": "Port Congestion Primitive In",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": "count",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 10,
+            "x": 1,
+            "y": 26
+          },
+          "height": -1,
+          "id": "6d302993-258a-5cdd-80d9-388ffdc0c2ad",
+          "title": "Congestion and Discards",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "d4b7af94-1011-529f-aed7-281befd3124b"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "75b1768f-a0ae-5fb9-8a71-458373baeb17"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "d8493497-c9d4-5cb2-91d5-f89e99dd665b"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "ac1414bf-91e4-5351-9a96-2633b89c6b8a"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "d8493497-c9d4-5cb2-91d5-f89e99dd665b",
+          "widgetIdReceiver": "ac1414bf-91e4-5351-9a96-2633b89c6b8a"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "59808510-ee3b-529f-ad06-9a1f9e109ce9"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "d8493497-c9d4-5cb2-91d5-f89e99dd665b",
+          "widgetIdReceiver": "59808510-ee3b-529f-ad06-9a1f9e109ce9"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "d43aa5e2-b1f1-5f6f-9366-f69c04553d3e",
+          "widgetIdReceiver": "6d302993-258a-5cdd-80d9-388ffdc0c2ad"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "d8493497-c9d4-5cb2-91d5-f89e99dd665b",
+          "widgetIdReceiver": "6d302993-258a-5cdd-80d9-388ffdc0c2ad"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "9d01fc1a-5927-56ee-a8d0-7b57ecb2805e",
+      "name": "Brocade Fabric OS/Brocade Hardware Environment",
+      "namePath": "Brocade Fabric OS",
+      "rank": 5,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "0",
+                "resourceKindId": "resourceKind:id:0_::_",
+                "resourceKindName": "Brocade Environmental Sensor"
+              },
+              {
+                "id": "1",
+                "resourceKindId": "resourceKind:id:1_::_",
+                "resourceKindName": "Brocade FC Transceiver"
+              },
+              {
+                "id": "6",
+                "resourceKindId": "resourceKind:id:6_::_",
+                "resourceKindName": "Brocade Power Supply"
+              },
+              {
+                "id": "7",
+                "resourceKindId": "resourceKind:id:7_::_",
+                "resourceKindName": "Brocade Fan"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "Environmental and FRU Objects"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "title": "Environmental and FRU Objects",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "a14ff49c-f928-522a-ac81-bc5792fe1eaa",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "7f34f866-40c5-5ac1-9608-eaccbd08e0bc",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "0ac2fe15-92df-531f-8663-9928e7a4331f",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-0",
+                  "isStringMetric": false,
+                  "metricKey": "sensor_temperature",
+                  "label": "Sensor Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "1815e2bf-ca0d-5abb-993f-0d2fbce6b93e",
+                  "isStringMetric": false,
+                  "metricKey": "sensor_temperature_fahrenheit",
+                  "label": "Sensor Temperature Fahrenheit",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "unit": "degF",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-1",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_temperature",
+                  "label": "Transceiver Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "c249e930-842b-5218-9872-a874a32fe900",
+                  "isStringMetric": false,
+                  "metricKey": "power_supply_temperature",
+                  "label": "Power Supply Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": "degC",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "678cc3a3-3073-5795-a663-4f6803fa2670",
+          "title": "Thermal Status",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "6192c535-7a02-5f81-84a1-f4a1b4060479",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_nominal_bit_rate",
+                  "label": "Transceiver Nominal Bit Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": "Mbit/s",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "581f0203-9855-5ded-84d1-ab552b168546",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_voltage",
+                  "label": "Transceiver Voltage",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": "V",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-2",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_tx_power",
+                  "label": "Transceiver Tx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-3",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_rx_power",
+                  "label": "Transceiver Rx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "5ccdf4f1-44f8-5aad-b007-4bc6df9b5042",
+          "title": "Optical Signal",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "370a38fa-7e93-559d-bd4d-f6eb0e81238c",
+                  "isStringMetric": false,
+                  "metricKey": "power_supply_power_production",
+                  "label": "Power Supply Power Production",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": "W",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "4f28ea86-8d8a-56a7-880b-807f7f917154",
+                  "isStringMetric": false,
+                  "metricKey": "power_supply_power_usage",
+                  "label": "Power Supply Power Usage",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": "W",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "450b4f34-051b-58f9-b68c-f1ade13497c5",
+                  "isStringMetric": false,
+                  "metricKey": "power_supply_input_voltage",
+                  "label": "Power Supply Input Voltage",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": "V",
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-21",
+                  "isStringMetric": false,
+                  "metricKey": "fan_speed",
+                  "label": "Fan Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "resourceKindName": "Brocade Fan",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "743594e4-c12c-5c06-87eb-c1cb1342036b",
+                  "isStringMetric": false,
+                  "metricKey": "fan_power_consumption",
+                  "label": "Fan Power Consumption",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "resourceKindName": "Brocade Fan",
+                  "unit": "W",
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 10,
+            "x": 1,
+            "y": 26
+          },
+          "height": -1,
+          "id": "7d0dce3b-c39e-576c-a799-b4cc393aab4e",
+          "title": "Power and Airflow",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "a14ff49c-f928-522a-ac81-bc5792fe1eaa"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "7f34f866-40c5-5ac1-9608-eaccbd08e0bc"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "0ac2fe15-92df-531f-8663-9928e7a4331f"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "678cc3a3-3073-5795-a663-4f6803fa2670"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "0ac2fe15-92df-531f-8663-9928e7a4331f",
+          "widgetIdReceiver": "678cc3a3-3073-5795-a663-4f6803fa2670"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "5ccdf4f1-44f8-5aad-b007-4bc6df9b5042"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "0ac2fe15-92df-531f-8663-9928e7a4331f",
+          "widgetIdReceiver": "5ccdf4f1-44f8-5aad-b007-4bc6df9b5042"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "4e11807a-7387-581e-98fe-61f12473bb56",
+          "widgetIdReceiver": "7d0dce3b-c39e-576c-a799-b4cc393aab4e"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "0ac2fe15-92df-531f-8663-9928e7a4331f",
+          "widgetIdReceiver": "7d0dce3b-c39e-576c-a799-b4cc393aab4e"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "77dfa444-c606-5e4a-93fa-eb59b3b08e05",
+      "name": "Brocade Fabric OS/Brocade Alerts and Health",
+      "namePath": "Brocade Fabric OS",
+      "rank": 6,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "4",
+                "resourceKindId": "resourceKind:id:4_::_",
+                "resourceKindName": "Brocade Fibre Channel Fabric"
+              },
+              {
+                "id": "2",
+                "resourceKindId": "resourceKind:id:2_::_",
+                "resourceKindName": "Brocade Fibre Channel Switch"
+              },
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              },
+              {
+                "id": "5",
+                "resourceKindId": "resourceKind:id:5_::_",
+                "resourceKindName": "Brocade Connected FC Endpoint"
+              },
+              {
+                "id": "1",
+                "resourceKindId": "resourceKind:id:1_::_",
+                "resourceKindName": "Brocade FC Transceiver"
+              },
+              {
+                "id": "0",
+                "resourceKindId": "resourceKind:id:0_::_",
+                "resourceKindName": "Brocade Environmental Sensor"
+              },
+              {
+                "id": "6",
+                "resourceKindId": "resourceKind:id:6_::_",
+                "resourceKindName": "Brocade Power Supply"
+              },
+              {
+                "id": "7",
+                "resourceKindId": "resourceKind:id:7_::_",
+                "resourceKindName": "Brocade Fan"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "SAN Health Objects"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "title": "SAN Health Objects",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "3e62a651-3f08-5724-b006-7fe8cd2921ad",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "eb6578bc-deeb-5673-bb71-023aff418b86",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "575d2804-b25a-5fa3-a9cb-6a5bd1fe8a18",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-12",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-13",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-4",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-5",
+                  "isStringMetric": false,
+                  "metricKey": "badge|risk",
+                  "label": "Risk",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-6",
+                  "isStringMetric": false,
+                  "metricKey": "badge|efficiency",
+                  "label": "Efficiency",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-15",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:5_::_",
+                  "resourceKindName": "Brocade Connected FC Endpoint",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-18",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "72cbb00c-43fd-5c17-9f20-722d475dea3a",
+          "title": "Health, Risk, and Efficiency",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-9",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_crc_errors",
+                  "label": "Port In Crc Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-10",
+                  "isStringMetric": false,
+                  "metricKey": "port_link_failures",
+                  "label": "Port Link Failures",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-0",
+                  "isStringMetric": false,
+                  "metricKey": "sensor_temperature",
+                  "label": "Sensor Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-1",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_temperature",
+                  "label": "Transceiver Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-21",
+                  "isStringMetric": false,
+                  "metricKey": "fan_speed",
+                  "label": "Fan Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "resourceKindName": "Brocade Fan",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "981f3e72-5b0f-560f-a32c-1fb74d09f2ef",
+          "title": "Health Indicators",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "widgetIdReceiver": "3e62a651-3f08-5724-b006-7fe8cd2921ad"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "widgetIdReceiver": "eb6578bc-deeb-5673-bb71-023aff418b86"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "widgetIdReceiver": "575d2804-b25a-5fa3-a9cb-6a5bd1fe8a18"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "widgetIdReceiver": "72cbb00c-43fd-5c17-9f20-722d475dea3a"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "575d2804-b25a-5fa3-a9cb-6a5bd1fe8a18",
+          "widgetIdReceiver": "72cbb00c-43fd-5c17-9f20-722d475dea3a"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "6f5174ee-1e55-5f16-bc29-ca34865a0a16",
+          "widgetIdReceiver": "981f3e72-5b0f-560f-a32c-1fb74d09f2ef"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "575d2804-b25a-5fa3-a9cb-6a5bd1fe8a18",
+          "widgetIdReceiver": "981f3e72-5b0f-560f-a32c-1fb74d09f2ef"
+        }
+      ]
+    },
+    {
+      "columnCount": -1,
+      "columnProportion": 0,
+      "disabled": false,
+      "id": "ccea6678-bbe8-5e68-b046-cf5de4d1f1ff",
+      "name": "Brocade Fabric OS/Brocade Health Investigation",
+      "namePath": "Brocade Fabric OS",
+      "rank": 7,
+      "shared": true,
+      "userId": "87f8aec3-b101-49f9-ad66-41c622534690",
+      "widgets": [
+        {
+          "collapsed": false,
+          "config": {
+            "badge": [
+              {
+                "badgeKey": "health",
+                "badgeName": "Health"
+              },
+              {
+                "badgeKey": "workload",
+                "badgeName": "Workload"
+              },
+              {
+                "badgeKey": "anomalies",
+                "badgeName": "Anomalies"
+              },
+              {
+                "badgeKey": "faults",
+                "badgeName": "Faults"
+              },
+              {
+                "badgeKey": "risk",
+                "badgeName": "Risk"
+              },
+              {
+                "badgeKey": "timeRemaining",
+                "badgeName": "Time Remaining"
+              },
+              {
+                "badgeKey": "capacity",
+                "badgeName": "Capacity Remaining"
+              },
+              {
+                "badgeKey": "stress",
+                "badgeName": "Stress"
+              },
+              {
+                "badgeKey": "compliance",
+                "badgeName": "Compliance"
+              },
+              {
+                "badgeKey": "efficiency",
+                "badgeName": "Efficiency"
+              },
+              {
+                "badgeKey": "waste",
+                "badgeName": "Reclaimable Capacity"
+              },
+              {
+                "badgeKey": "density",
+                "badgeName": "Density"
+              }
+            ],
+            "custom": [
+              {
+                "id": "4",
+                "resourceKindId": "resourceKind:id:4_::_",
+                "resourceKindName": "Brocade Fibre Channel Fabric"
+              },
+              {
+                "id": "2",
+                "resourceKindId": "resourceKind:id:2_::_",
+                "resourceKindName": "Brocade Fibre Channel Switch"
+              },
+              {
+                "id": "3",
+                "resourceKindId": "resourceKind:id:3_::_",
+                "resourceKindName": "Brocade Fibre Channel Port"
+              },
+              {
+                "id": "5",
+                "resourceKindId": "resourceKind:id:5_::_",
+                "resourceKindName": "Brocade Connected FC Endpoint"
+              },
+              {
+                "id": "1",
+                "resourceKindId": "resourceKind:id:1_::_",
+                "resourceKindName": "Brocade FC Transceiver"
+              },
+              {
+                "id": "0",
+                "resourceKindId": "resourceKind:id:0_::_",
+                "resourceKindName": "Brocade Environmental Sensor"
+              },
+              {
+                "id": "6",
+                "resourceKindId": "resourceKind:id:6_::_",
+                "resourceKindName": "Brocade Power Supply"
+              },
+              {
+                "id": "7",
+                "resourceKindId": "resourceKind:id:7_::_",
+                "resourceKindName": "Brocade Fan"
+              }
+            ],
+            "mode": "custom",
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "title": "Environment Overview"
+          },
+          "gridsterCoords": {
+            "h": 16,
+            "w": 3,
+            "x": 1,
+            "y": 1
+          },
+          "height": -1,
+          "id": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "title": "Environment Overview",
+          "type": "Skittles"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "status": [
+              0
+            ]
+          },
+          "gridsterCoords": {
+            "h": 6,
+            "w": 3,
+            "x": 4,
+            "y": 1
+          },
+          "height": -1,
+          "id": "d84a2adf-15b1-5264-bd10-22444e0cd593",
+          "title": "Active Alerts for Selected Object",
+          "type": "AlertList"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 16,
+            "w": 4,
+            "x": 7,
+            "y": 1
+          },
+          "height": -1,
+          "id": "1d468757-c02f-5e2a-a1b0-129d4c4bdb6e",
+          "title": "Related SAN Objects",
+          "type": "ResourceRelationship"
+        },
+        {
+          "collapsed": false,
+          "config": {},
+          "gridsterCoords": {
+            "h": 4,
+            "w": 3,
+            "x": 4,
+            "y": 7
+          },
+          "height": -1,
+          "id": "9d38cc76-f718-5ed9-a78c-b59fc235b6cf",
+          "title": "Metric Picker",
+          "type": "MetricPicker"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-12",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-4",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-15",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:5_::_",
+                  "resourceKindName": "Brocade Connected FC Endpoint",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-18",
+                  "isStringMetric": false,
+                  "metricKey": "badge|health",
+                  "label": "Health",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "resourceKindName": "Brocade Power Supply",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-9",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_crc_errors",
+                  "label": "Port In Crc Errors",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-0",
+                  "isStringMetric": false,
+                  "metricKey": "sensor_temperature",
+                  "label": "Sensor Temperature",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 1,
+            "y": 17
+          },
+          "height": -1,
+          "id": "e8f9d90d-270b-5433-9198-71c2584b95d3",
+          "title": "Selected Object Health",
+          "type": "MetricChart"
+        },
+        {
+          "collapsed": false,
+          "config": {
+            "metric": {
+              "mode": "resourceKind",
+              "resourceKindMetrics": [
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-7",
+                  "isStringMetric": false,
+                  "metricKey": "port_in_rate",
+                  "label": "Port In Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-8",
+                  "isStringMetric": false,
+                  "metricKey": "port_out_rate",
+                  "label": "Port Out Rate",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-3",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_rx_power",
+                  "label": "Transceiver Rx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-2",
+                  "isStringMetric": false,
+                  "metricKey": "transceiver_tx_power",
+                  "label": "Transceiver Tx Power",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "unit": null,
+                  "yellowBound": null
+                },
+                {
+                  "colorMethod": 1,
+                  "id": "extModel1266-21",
+                  "isStringMetric": false,
+                  "metricKey": "fan_speed",
+                  "label": "Fan Speed",
+                  "metricUnitId": null,
+                  "orangeBound": null,
+                  "redBound": null,
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "resourceKindName": "Brocade Fan",
+                  "unit": null,
+                  "yellowBound": null
+                }
+              ]
+            }
+          },
+          "gridsterCoords": {
+            "h": 9,
+            "w": 5,
+            "x": 6,
+            "y": 17
+          },
+          "height": -1,
+          "id": "980b988f-06f1-5e1b-9ae2-c013921f138b",
+          "title": "Selected Object Performance",
+          "type": "MetricChart"
+        }
+      ],
+      "widgetInteractions": [
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "widgetIdReceiver": "d84a2adf-15b1-5264-bd10-22444e0cd593"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "widgetIdReceiver": "1d468757-c02f-5e2a-a1b0-129d4c4bdb6e"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "widgetIdReceiver": "9d38cc76-f718-5ed9-a78c-b59fc235b6cf"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "widgetIdReceiver": "e8f9d90d-270b-5433-9198-71c2584b95d3"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "9d38cc76-f718-5ed9-a78c-b59fc235b6cf",
+          "widgetIdReceiver": "e8f9d90d-270b-5433-9198-71c2584b95d3"
+        },
+        {
+          "type": "resourceId",
+          "widgetIdProvider": "72fb7c9a-fc7a-52ee-9e94-0edce1045b50",
+          "widgetIdReceiver": "980b988f-06f1-5e1b-9ae2-c013921f138b"
+        },
+        {
+          "type": "metricId",
+          "widgetIdProvider": "9d38cc76-f718-5ed9-a78c-b59fc235b6cf",
+          "widgetIdReceiver": "980b988f-06f1-5e1b-9ae2-c013921f138b"
+        }
+      ]
+    },
+    {
+      "shared": true,
+      "temporary": false,
+      "hidden": false,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "columnProportion": "1",
+      "importComplete": true,
+      "description": "",
+      "widgets": [
+        {
+          "collapsed": false,
+          "id": "66dce13a-f7a1-5f82-9824-1bb250f81473",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 1,
+            "h": 8,
+            "y": 7
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by In Rate",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by In Rate",
+            "roundDecimals": 2,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_in_rate"
+                ],
+                "value": "port_in_rate"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "3a572c89-a91f-52f9-a5f6-fd1e726bcd37",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 4,
+            "h": 8,
+            "y": 7
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by Out Rate",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by Out Rate",
+            "roundDecimals": 2,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_out_rate"
+                ],
+                "value": "port_out_rate"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "7d5b73ad-8d23-5a90-9753-7b88fb193945",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 7,
+            "h": 8,
+            "y": 7
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by CRC Errors",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by CRC Errors",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_in_crc_errors"
+                ],
+                "value": "port_in_crc_errors"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "024bef98-7e24-56ce-9086-0a8032b6bdf3",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 10,
+            "h": 8,
+            "y": 7
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by Link Failures",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by Link Failures",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_link_failures"
+                ],
+                "value": "port_link_failures"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "4ae70957-32d0-56b4-b38d-a48e2b3fd272",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 1,
+            "h": 8,
+            "y": 15
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by BB Credit Zero",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by BB Credit Zero",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_bb_credit_zero"
+                ],
+                "value": "port_bb_credit_zero"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "ba52ae49-544d-5a6e-a525-463e6ef31d6e",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 4,
+            "h": 8,
+            "y": 15
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by Class 3 Discards",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by Class 3 Discards",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_class_3_discards"
+                ],
+                "value": "port_class_3_discards"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "b9794b61-8145-570b-8abd-d32f7e95d100",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 7,
+            "h": 8,
+            "y": 15
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by Input Buffer Full",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by Input Buffer Full",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_input_buffer_full"
+                ],
+                "value": "port_input_buffer_full"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "11e17eed-7547-54ef-89b5-ba0e150bbe06",
+          "gridsterCoords": {
+            "w": 3,
+            "x": 10,
+            "h": 8,
+            "y": 15
+          },
+          "type": "ParetoAnalysis",
+          "title": "Top 10 Ports by FEC Uncorrected",
+          "config": {
+            "barsCount": 10,
+            "regenerationTime": 15,
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "tagOption": {
+              "tagFilter": null,
+              "value": {
+                "tagOption": "leastHealthyApplications"
+              }
+            },
+            "additionalColumns": [],
+            "title": "Top 10 Ports by FEC Uncorrected",
+            "roundDecimals": 0,
+            "mode": "metric",
+            "filterMode": "tagFilter",
+            "depth": 10,
+            "metricOption": {
+              "tagFilter": null,
+              "metricInfo": {
+                "path": [
+                  "/source/port_fec_uncorrected"
+                ],
+                "value": "port_fec_uncorrected"
+              },
+              "resourceKindId": [
+                "resourceKind:id:3_::_"
+              ],
+              "value": {
+                "metricOption": "metricsHighestUtilization"
+              }
+            },
+            "selfProvider": {
+              "selfProvider": true
+            },
+            "additionalColumns_resource": [],
+            "filterOldMetrics": {
+              "filterOldMetrics": false
+            }
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "4bfbbab3-6381-5155-96f3-3f973e11f78b",
+          "gridsterCoords": {
+            "w": 12,
+            "x": 1,
+            "h": 6,
+            "y": 1
+          },
+          "type": "ResourceList",
+          "title": "Brocade Fibre Channel Ports",
+          "config": {
+            "mode": 0,
+            "tagFilter": {
+              "path": [
+                "/source/kind/kind:resourceKind:id:3_::_"
+              ],
+              "value": {
+                "bus": [],
+                "adapterKind": [],
+                "kind": [
+                  "resourceKind:id:3_::_"
+                ],
+                "exclaim": false,
+                "healthRange": [],
+                "maintenanceSchedule": [],
+                "adapterInstance": [],
+                "collector": [],
+                "tier": [],
+                "state": [],
+                "tag": [],
+                "day": [],
+                "status": []
+              }
+            },
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "selectFirstRow": {
+              "selectFirstRow": false
+            },
+            "additionalColumns": [
+              {
+                "boxLabel": "Line Speed",
+                "metricName": "Line Speed",
+                "metricKey": "port_line_speed",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "In Rate",
+                "metricName": "In Rate",
+                "metricKey": "port_in_rate",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "Out Rate",
+                "metricName": "Out Rate",
+                "metricKey": "port_out_rate",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "CRC Errors",
+                "metricName": "CRC Errors",
+                "metricKey": "port_in_crc_errors",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "Link Failures",
+                "metricName": "Link Failures",
+                "metricKey": "port_link_failures",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "BB Credit Zero",
+                "metricName": "BB Credit Zero",
+                "metricKey": "port_bb_credit_zero",
+                "resourceKindId": "resourceKind:id:3_::_"
+              },
+              {
+                "boxLabel": "Class 3 Discards",
+                "metricName": "Class 3 Discards",
+                "metricKey": "port_class_3_discards",
+                "resourceKindId": "resourceKind:id:3_::_"
+              }
+            ],
+            "title": "Brocade Fibre Channel Ports"
+          },
+          "height": 324,
+          "states": [
+            {
+              "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A306%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253AresourceRating%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A103%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A222%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A188%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A236%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A202%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A174%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A209%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A164%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A222%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah47%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100",
+              "key": "permResGrid_widget_8386c6dd-e01e-41ea-8031-c599b8c65b8a_aad016f6-bd63-45d0-8f07-b0e84dfb967f"
+            },
+            {
+              "value": "b%3A1",
+              "key": "perm_toolbarVisible_widget_8386c6dd-e01e-41ea-8031-c599b8c65b8a_aad016f6-bd63-45d0-8f07-b0e84dfb967f"
+            }
+          ]
+        }
+      ],
+      "states": [],
+      "homeTab": false,
+      "rank": 8,
+      "disabled": false,
+      "id": "9202c3a8-887e-5e66-810a-41f32aeef0c6",
+      "adapterName": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [],
+      "namePath": "Brocade Fabric OS",
+      "lastUpdateUserId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "columnCount": 1,
+      "userId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "name": "Brocade Fabric OS/Brocade Port Performance Top 10",
+      "gridsterMaxColumns": 12
+    },
+    {
+      "shared": true,
+      "temporary": false,
+      "hidden": false,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "columnProportion": "1",
+      "importComplete": true,
+      "description": "",
+      "widgets": [
+        {
+          "collapsed": false,
+          "id": "4ade9a47-3fdb-5657-b111-6caa7d9d4afe",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 1,
+            "h": 11,
+            "y": 1
+          },
+          "type": "ResourceList",
+          "title": "1. Select a Brocade SAN Object",
+          "config": {
+            "mode": 0,
+            "tagFilter": {
+              "path": [
+                "/source/kind/kind:resourceKind:id:0_::_",
+                "/source/kind/kind:resourceKind:id:1_::_",
+                "/source/kind/kind:resourceKind:id:2_::_",
+                "/source/kind/kind:resourceKind:id:3_::_",
+                "/source/kind/kind:resourceKind:id:4_::_",
+                "/source/kind/kind:resourceKind:id:5_::_",
+                "/source/kind/kind:resourceKind:id:6_::_",
+                "/source/kind/kind:resourceKind:id:7_::_"
+              ],
+              "value": {
+                "bus": [],
+                "adapterKind": [],
+                "kind": [
+                  "resourceKind:id:0_::_",
+                  "resourceKind:id:1_::_",
+                  "resourceKind:id:2_::_",
+                  "resourceKind:id:3_::_",
+                  "resourceKind:id:4_::_",
+                  "resourceKind:id:5_::_",
+                  "resourceKind:id:6_::_",
+                  "resourceKind:id:7_::_"
+                ],
+                "exclaim": false,
+                "healthRange": [],
+                "maintenanceSchedule": [],
+                "adapterInstance": [],
+                "collector": [],
+                "tier": [],
+                "state": [],
+                "tag": [],
+                "day": [],
+                "status": []
+              }
+            },
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "selectFirstRow": {
+              "selectFirstRow": false
+            },
+            "additionalColumns": [],
+            "title": "1. Select a Brocade SAN Object"
+          },
+          "height": 609,
+          "states": [
+            {
+              "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A268.875%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253AresourceRating%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah47%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100",
+              "key": "permResGrid_widget_d71968aa-058d-455a-8822-580533cd2311_aa4a2526-21bd-4748-a324-7b27a49666d4"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "50a81659-ec5c-54b0-adba-f40dc791a1fd",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 7,
+            "h": 5,
+            "y": 1
+          },
+          "type": "HealthChart",
+          "title": "2. Health of the Selected SAN Object",
+          "config": {
+            "metricName": "",
+            "refreshInterval": 120,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "sortByDir": {
+              "orderByDir": "asc"
+            },
+            "title": "2. Health of the Selected SAN Object",
+            "showResourceName": {
+              "showResourceName": true
+            },
+            "chartHeight": 115,
+            "metricUnit": {
+              "metricUnitId": null,
+              "metricUnitName": ""
+            },
+            "mode": "self",
+            "metricType": {
+              "metricType": "health"
+            },
+            "tagFilter": null,
+            "paginationNumber": 15,
+            "showMetricLabel": {
+              "showMetricLabel": false
+            },
+            "metricLabel": "",
+            "selectFirstRow": {
+              "selectFirstRow": false
+            },
+            "sortBy": "metricValue",
+            "selfProvider": {
+              "selfProvider": false
+            }
+          },
+          "height": 267,
+          "states": [
+            {
+              "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+              "key": "permDateRange_HealthChart_widget_d71968aa-058d-455a-8822-580533cd2311_d2b9d6d9-83d8-48a8-bcce-d4437752b711"
+            },
+            {
+              "value": "b%3A1",
+              "key": "perm_toolbarVisible_widget_d71968aa-058d-455a-8822-580533cd2311_d2b9d6d9-83d8-48a8-bcce-d4437752b711"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "e07f5882-074c-5c36-98e2-466f5ab77eb8",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 1,
+            "h": 11,
+            "y": 12
+          },
+          "type": "ResourceRelationship",
+          "title": "4. Are Related SAN Objects Healthy?",
+          "config": {
+            "tagFilter": null,
+            "nodeSize": null,
+            "refreshInterval": 300,
+            "autoZoom": {
+              "autoSize": false
+            },
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "resourceName": "",
+            "selfProvider": {
+              "selfProvider": false
+            },
+            "title": "4. Are Related SAN Objects Healthy?"
+          },
+          "height": 609,
+          "states": [
+            {
+              "value": "o%3A",
+              "key": "permResourceRelationship_widget_d71968aa-058d-455a-8822-580533cd2311_6a50fade-d77d-46fa-a754-0480e5923f18"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "582a9896-4bc8-5367-94f6-72e253dcc6b4",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 7,
+            "h": 6,
+            "y": 6
+          },
+          "type": "AlertList",
+          "title": "3. Active Alerts for the Selected SAN Object",
+          "config": {
+            "alertImpact": [],
+            "mode": "resource",
+            "tagFilter": null,
+            "alertAction": [],
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "criticalityLevel": [],
+            "state": [],
+            "title": "3. Active Alerts for the Selected SAN Object",
+            "type": [],
+            "status": [
+              0
+            ]
+          },
+          "height": 324,
+          "states": [
+            {
+              "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+              "key": "permDateFilter_widget_d71968aa-058d-455a-8822-580533cd2311_818077c2-1c0b-442c-8261-c1c95fc83aae"
+            },
+            {
+              "value": "s%3ADEFINITION",
+              "key": "permViewMode_widget_d71968aa-058d-455a-8822-580533cd2311_818077c2-1c0b-442c-8261-c1c95fc83aae"
+            },
+            {
+              "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AstartTimeUtc",
+              "key": "permAlertGrid_perm_widget_d71968aa-058d-455a-8822-580533cd2311_818077c2-1c0b-442c-8261-c1c95fc83aae"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "13df1145-a030-5a6c-8cae-b5ade0469d6c",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 7,
+            "h": 11,
+            "y": 12
+          },
+          "type": "Scoreboard",
+          "title": "5. Key Health, Traffic, Error, and Environment Metrics",
+          "config": {
+            "visualTheme": 6,
+            "maxCellCount": 100,
+            "showMetricName": {
+              "showMetricName": true
+            },
+            "refreshInterval": 120,
+            "showDT": {
+              "showDT": false
+            },
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "relationshipMode": 0,
+            "valueSize": 24,
+            "boxHeight": null,
+            "title": "5. Key Health, Traffic, Error, and Environment Metrics",
+            "showResourceName": {
+              "showResourceName": false
+            },
+            "roundDecimals": null,
+            "showMetricUnit": {
+              "showMetricUnit": true
+            },
+            "mode": {
+              "layoutMode": "fixedView"
+            },
+            "labelSize": 12,
+            "metric": {
+              "mode": "resourceKind",
+              "resourceMetrics": [],
+              "resourceKindMetrics": [
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "id": "0d81a4c7-a5b2-591b-8d09-963ff36b69b0",
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "id": "541345ac-7038-52ad-b2b1-2acfa715e88c",
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Switch",
+                  "id": "f25c211e-06e1-5375-b7e6-7f917d793147",
+                  "resourceKindId": "resourceKind:id:2_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "3a9c7c60-eb33-530d-a806-06994aab5cf1",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Fabric",
+                  "id": "591cfd34-0d3f-5f16-832d-0a7deced828c",
+                  "resourceKindId": "resourceKind:id:4_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Connected FC Endpoint",
+                  "id": "274000e6-57b1-5d8e-85f4-6c1482fd7cd2",
+                  "resourceKindId": "resourceKind:id:5_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Power Supply",
+                  "id": "99c405fc-c4c3-5187-8923-111db73afe78",
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Badge|Health (%)",
+                  "metricKey": "badge|health",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fan",
+                  "id": "7072e37f-96ca-5fe7-848c-52234544ddaa",
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port Line Speed",
+                  "metricKey": "port_line_speed",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "ffdf2cd4-e9e0-5f40-a2cb-ee33a646d4b8",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port In Rate",
+                  "metricKey": "port_in_rate",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "57afda06-15e3-5e7f-a195-ce857f6e6440",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port Out Rate",
+                  "metricKey": "port_out_rate",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "a722e37d-4a11-5af8-9161-e324b5741cc3",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port In CRC Errors",
+                  "metricKey": "port_in_crc_errors",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "26144762-4d5f-5607-b787-d53120e65d8c",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port Link Failures",
+                  "metricKey": "port_link_failures",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "0c523520-b34b-5438-a5e7-ce62c41a17de",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Port BB Credit Zero",
+                  "metricKey": "port_bb_credit_zero",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fibre Channel Port",
+                  "id": "c454aef7-fb19-5beb-ad31-96153cb9d0fc",
+                  "resourceKindId": "resourceKind:id:3_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Sensor Temperature",
+                  "metricKey": "sensor_temperature",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Environmental Sensor",
+                  "id": "ec988809-1d41-5eb6-890e-0a6002cfdff9",
+                  "resourceKindId": "resourceKind:id:0_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Transceiver Temperature",
+                  "metricKey": "transceiver_temperature",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "id": "a0ec3989-9cf5-50f9-9c13-82f79dd39417",
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Transceiver Rx Power",
+                  "metricKey": "transceiver_rx_power",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade FC Transceiver",
+                  "id": "3164e104-b9ea-563d-b6c1-90a056955507",
+                  "resourceKindId": "resourceKind:id:1_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Fan Speed",
+                  "metricKey": "fan_speed",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Fan",
+                  "id": "0479f883-b361-5d6c-b7c3-d35ff72dda57",
+                  "resourceKindId": "resourceKind:id:7_::_",
+                  "colorMethod": 1
+                },
+                {
+                  "metricUnitId": -1,
+                  "unit": "Auto",
+                  "metricName": "Power Supply Power Usage",
+                  "metricKey": "power_supply_power_usage",
+                  "isStringMetric": false,
+                  "resourceKindName": "Brocade Power Supply",
+                  "id": "e7854f03-5e49-5e52-bace-70fe2eee8835",
+                  "resourceKindId": "resourceKind:id:6_::_",
+                  "colorMethod": 1
+                }
+              ]
+            },
+            "showSparkline": {
+              "showSparkline": true
+            },
+            "boxColumns": 4,
+            "periodLength": "last24Hour",
+            "selfProvider": {
+              "selfProvider": false
+            },
+            "resInteractionMode": null
+          },
+          "height": 609
+        }
+      ],
+      "states": [],
+      "homeTab": false,
+      "rank": 9,
+      "disabled": false,
+      "id": "7745e9f3-91fc-52f7-8d42-17f52e54dae0",
+      "adapterName": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [
+        {
+          "widgetIdProvider": "4ade9a47-3fdb-5657-b111-6caa7d9d4afe",
+          "type": "resourceId",
+          "widgetIdReceiver": "50a81659-ec5c-54b0-adba-f40dc791a1fd"
+        },
+        {
+          "widgetIdProvider": "4ade9a47-3fdb-5657-b111-6caa7d9d4afe",
+          "type": "resourceId",
+          "widgetIdReceiver": "e07f5882-074c-5c36-98e2-466f5ab77eb8"
+        },
+        {
+          "widgetIdProvider": "4ade9a47-3fdb-5657-b111-6caa7d9d4afe",
+          "type": "resourceId",
+          "widgetIdReceiver": "582a9896-4bc8-5367-94f6-72e253dcc6b4"
+        },
+        {
+          "widgetIdProvider": "4ade9a47-3fdb-5657-b111-6caa7d9d4afe",
+          "type": "resourceId",
+          "widgetIdReceiver": "13df1145-a030-5a6c-8cae-b5ade0469d6c"
+        }
+      ],
+      "namePath": "Brocade Fabric OS",
+      "lastUpdateUserId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "columnCount": 1,
+      "userId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "name": "Brocade Fabric OS/Troubleshooting Brocade SAN",
+      "gridsterMaxColumns": 12
+    },
+    {
+      "shared": true,
+      "temporary": false,
+      "hidden": false,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "columnProportion": "1",
+      "importComplete": true,
+      "description": "",
+      "widgets": [
+        {
+          "collapsed": false,
+          "id": "002a34b8-8fef-5ff7-bc12-64eec53f8fda",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 1,
+            "h": 15,
+            "y": 1
+          },
+          "type": "AlertList",
+          "title": "Active Brocade SAN Alerts",
+          "config": {
+            "alertImpact": [],
+            "mode": "tagFilter",
+            "tagFilter": {
+              "path": [
+                "/source/kind/kind:resourceKind:id:0_::_",
+                "/source/kind/kind:resourceKind:id:1_::_",
+                "/source/kind/kind:resourceKind:id:2_::_",
+                "/source/kind/kind:resourceKind:id:3_::_",
+                "/source/kind/kind:resourceKind:id:4_::_",
+                "/source/kind/kind:resourceKind:id:5_::_",
+                "/source/kind/kind:resourceKind:id:6_::_",
+                "/source/kind/kind:resourceKind:id:7_::_"
+              ],
+              "value": {
+                "bus": [],
+                "adapterKind": [],
+                "kind": [
+                  "resourceKind:id:0_::_",
+                  "resourceKind:id:1_::_",
+                  "resourceKind:id:2_::_",
+                  "resourceKind:id:3_::_",
+                  "resourceKind:id:4_::_",
+                  "resourceKind:id:5_::_",
+                  "resourceKind:id:6_::_",
+                  "resourceKind:id:7_::_"
+                ],
+                "exclaim": false,
+                "healthRange": [],
+                "maintenanceSchedule": [],
+                "adapterInstance": [],
+                "collector": [],
+                "tier": [],
+                "state": [],
+                "tag": [],
+                "day": [],
+                "status": []
+              }
+            },
+            "alertAction": [],
+            "refreshInterval": 300,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "criticalityLevel": [],
+            "state": [],
+            "title": "Active Brocade SAN Alerts",
+            "type": [],
+            "status": [
+              0
+            ]
+          },
+          "height": 837,
+          "states": [
+            {
+              "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+              "key": "permDateFilter_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_4146fa43-a776-40d6-9fa6-e41c18d38504"
+            },
+            {
+              "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AstartTimeUtc",
+              "key": "permAlertGrid_perm_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_4146fa43-a776-40d6-9fa6-e41c18d38504"
+            },
+            {
+              "value": "s%3ADEFINITION",
+              "key": "permViewMode_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_4146fa43-a776-40d6-9fa6-e41c18d38504"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "291fefa1-46c1-54ef-bbae-6f22efa7acd9",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 7,
+            "h": 11,
+            "y": 1
+          },
+          "type": "ResourceRelationship",
+          "title": "SAN Topology for Selected Alert Object",
+          "config": {
+            "tagFilter": null,
+            "nodeSize": null,
+            "refreshInterval": 300,
+            "autoZoom": {
+              "autoSize": false
+            },
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "resourceName": "",
+            "selfProvider": {
+              "selfProvider": false
+            },
+            "title": "SAN Topology for Selected Alert Object"
+          },
+          "height": 609,
+          "states": [
+            {
+              "value": "o%3A",
+              "key": "permResourceRelationship_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_bd0693f9-2fc7-454c-9ed0-0423faf6d241"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "id": "92007946-50d2-52d8-bd1e-f3b63d4f0dc6",
+          "gridsterCoords": {
+            "w": 12,
+            "x": 1,
+            "h": 8,
+            "y": 16
+          },
+          "type": "IntSummaryAlertVolume",
+          "title": "Alert Volume for Selected SAN Object",
+          "config": {
+            "refreshInterval": 120,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "selfProvider": {
+              "selfProvider": false
+            },
+            "title": "Alert Volume for Selected SAN Object"
+          },
+          "height": 438
+        },
+        {
+          "collapsed": false,
+          "id": "14960f6a-17f0-5d04-add9-78ff387b5a4d",
+          "gridsterCoords": {
+            "w": 6,
+            "x": 7,
+            "h": 4,
+            "y": 12
+          },
+          "type": "HealthChart",
+          "title": "Health of Selected Alert Object",
+          "config": {
+            "metricName": "",
+            "refreshInterval": 120,
+            "refreshContent": {
+              "refreshContent": true
+            },
+            "sortByDir": {
+              "orderByDir": "asc"
+            },
+            "title": "Health of Selected Alert Object",
+            "showResourceName": {
+              "showResourceName": true
+            },
+            "chartHeight": 115,
+            "metricUnit": {
+              "metricUnitId": null,
+              "metricUnitName": ""
+            },
+            "mode": "self",
+            "metricType": {
+              "metricType": "health"
+            },
+            "tagFilter": null,
+            "paginationNumber": 15,
+            "showMetricLabel": {
+              "showMetricLabel": false
+            },
+            "metricLabel": "",
+            "selectFirstRow": {
+              "selectFirstRow": false
+            },
+            "sortBy": "metricValue",
+            "selfProvider": {
+              "selfProvider": false
+            }
+          },
+          "height": 210,
+          "states": [
+            {
+              "value": "b%3A0",
+              "key": "perm_toolbarVisible_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_cb6ff501-9c72-45a8-adbc-01cc164250b0"
+            },
+            {
+              "value": "s%3A%7B%22dateRange%22%3A%22dashboardTime%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+              "key": "permDateRange_HealthChart_widget_db5c4d28-d385-4008-8d1c-51a5d9bb78c5_cb6ff501-9c72-45a8-adbc-01cc164250b0"
+            }
+          ]
+        }
+      ],
+      "states": [],
+      "homeTab": false,
+      "rank": 10,
+      "disabled": false,
+      "id": "4c694f39-6cf5-5f56-a08e-f9c65d36d37a",
+      "adapterName": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [
+        {
+          "widgetIdProvider": "002a34b8-8fef-5ff7-bc12-64eec53f8fda",
+          "type": "resourceId",
+          "widgetIdReceiver": "291fefa1-46c1-54ef-bbae-6f22efa7acd9"
+        },
+        {
+          "widgetIdProvider": "002a34b8-8fef-5ff7-bc12-64eec53f8fda",
+          "type": "resourceId",
+          "widgetIdReceiver": "92007946-50d2-52d8-bd1e-f3b63d4f0dc6"
+        },
+        {
+          "widgetIdProvider": "002a34b8-8fef-5ff7-bc12-64eec53f8fda",
+          "type": "resourceId",
+          "widgetIdReceiver": "14960f6a-17f0-5d04-add9-78ff387b5a4d"
+        }
+      ],
+      "namePath": "Brocade Fabric OS",
+      "lastUpdateUserId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "columnCount": 1,
+      "userId": "b54e4771-c2b4-445c-866c-94239166cfca",
+      "name": "Brocade Fabric OS/Brocade Alerts and Topology",
+      "gridsterMaxColumns": 12
+    }
+  ],
+  "entries": {
+    "resourceKind": [
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:0_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_environmental_sensor"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:1_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_fc_transceiver"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:2_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_fibre_channel_switch"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:3_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_fibre_channel_port"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:4_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_fibre_channel_fabric"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:5_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_connected_fc_endpoint"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:6_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_power_supply"
+      },
+      {
+        "adapterKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack",
+        "internalId": "resourceKind:id:7_::_",
+        "resourceKindKey": "mpb_brocade_fabric_os_aria_operations_community_management_pack_brocade_fan"
+      }
+    ]
+  },
+  "uuid": "9c6b2469-c9bc-5905-bc9a-14543f971249"
+}

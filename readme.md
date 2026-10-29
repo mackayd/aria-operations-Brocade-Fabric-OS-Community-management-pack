@@ -4,8 +4,6 @@ Community VMware Aria Operations management pack for monitoring Dell Connectrix 
 
 Built with Aria Management Pack Builder, this pack collects fabric, switch, port, connected-endpoint, transceiver, sensor, fan, and power-supply resources without requiring SANnav. It includes Fabric OS session authentication, 35 numeric metrics, 62 domain properties, eight topology relationships, five event-based alert definitions, and ten interactive Brocade SAN dashboards.
 
-The first release targets the JSON REST API available in Fabric OS 9.x and 10.x. It was developed and validated with G620 and G720 emulator profiles
-
 > This is an independent community management pack, not an official Dell, Broadcom, or VMware-supported product. Validate it in a non-production environment before wider deployment. Read the validation status and known limitations before installing it.
 
 ## Release

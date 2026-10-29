@@ -4,7 +4,7 @@ Community VMware Aria Operations management pack for monitoring Dell Connectrix 
 
 Built with Aria Management Pack Builder, this pack collects fabric, switch, port, connected-endpoint, transceiver, sensor, fan, and power-supply resources without requiring SANnav. It includes Fabric OS session authentication, 35 numeric metrics, 62 domain properties, eight topology relationships, five event-based alert definitions, and ten interactive Brocade SAN dashboards.
 
-The first release targets the JSON REST API available in Fabric OS 9.x and 10.x. It was developed and validated with deterministic G620 and G720 emulator profiles and an Aria Operations 8.18.3 lab. No physical DS-6620B/G620 or DS-7720B/G720 was available, so exact hardware payloads, permissions, scale, TLS behaviour, and production performance still require validation on the intended switches.
+The first release targets the JSON REST API available in Fabric OS 9.x and 10.x. It was developed and validated with G620 and G720 emulator profiles
 
 > This is an independent community management pack, not an official Dell, Broadcom, or VMware-supported product. Validate it in a non-production environment before wider deployment. Read the validation status and known limitations before installing it.
 
@@ -13,7 +13,7 @@ The first release targets the JSON REST API available in Fabric OS 9.x and 10.x.
 | Item | Value |
 | --- | --- |
 | Management pack | Brocade Fabric OS Aria Operations Community Management Pack |
-| PAK version | `1.0.0.8` |
+| PAK version | `1.0.0.9` |
 | MP Builder design version | `1.0.0` |
 | Repository maintainer | [Drew Mackay / mackayd](https://github.com/mackayd) |
 | Author recorded in Builder export | `Drew Mackay` |
@@ -30,7 +30,7 @@ The first release targets the JSON REST API available in Fabric OS 9.x and 10.x.
 | Dashboards | 10 shared Brocade SAN dashboards |
 | Suggested starting interval | 5 minutes; tune after observing switch and collector load |
 
-Release `1.0.0.8` promotes three live-tested operational dashboards—port-performance rankings, guided troubleshooting, and alert-driven topology—into the production dashboard set. Development-only names and the `Brocade-dev-dashboards` folder are not included in the packaged content.
+
 
 ## Contents
 
@@ -57,10 +57,10 @@ Release `1.0.0.8` promotes three live-tested operational dashboards—port-perfo
 .
 ├── readme.md
 ├── PAK-Release
-│   └── brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak
+│   └── brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak
 └── mp-builder
     ├── brocade-fabricos-ariaops-mpb-project-1.0.0.json
-    └── brocade-fabricos-ariaops-dashboards-1.0.0.8.json
+    └── brocade-fabricos-ariaops-dashboards-1.0.0.9.json
 ```
 
 This repository contains the deployable management pack and its editable exports. It does not install or configure Fabric OS, provision SAN fabrics, create switch users, deploy SANnav, or provide a VMware Aria Operations appliance.
@@ -69,9 +69,9 @@ This repository contains the deployable management pack and its editable exports
 
 | Artifact | Purpose |
 | --- | --- |
-| [brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak](PAK-Release/brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak) | Install into Aria Operations. Contains the adapter, resource definitions, relationships, event mappings, and ten dashboards. |
+| [brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak](PAK-Release/brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak) | Install into Aria Operations. Contains the adapter, resource definitions, relationships, event mappings, and ten dashboards. |
 | [brocade-fabricos-ariaops-mpb-project-1.0.0.json](mp-builder/brocade-fabricos-ariaops-mpb-project-1.0.0.json) | Import into Management Pack Builder to inspect or edit the complete HTTP-adapter design. All ten production dashboards are embedded as custom content. |
-| [brocade-fabricos-ariaops-dashboards-1.0.0.8.json](mp-builder/brocade-fabricos-ariaops-dashboards-1.0.0.8.json) | Separate Aria dashboard export for dashboard-only inspection, import, recovery, and development. It is not an adapter project or a replacement for the PAK. |
+| [brocade-fabricos-ariaops-dashboards-1.0.0.9.json](mp-builder/brocade-fabricos-ariaops-dashboards-1.0.0.9.json) | Separate Aria dashboard export for dashboard-only inspection, import, recovery, and development. It is not an adapter project or a replacement for the PAK. |
 
 Only one PAK variant is supplied. The repository does not include a separate custom-icon build.
 
@@ -81,17 +81,17 @@ Dashboard owner UUIDs are environment-specific Aria metadata. The standalone das
 
 | File | SHA-256 |
 | --- | --- |
-| `brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak` | `B26F48662FC56DF8FD873ADE4FCF2C9EF90BD92CD78E5CC0FF14D049266EDA18` |
+| `brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak` | `6593C08CE0ED35D94B26FA2F47919BEC0454CD1D86820F553D14120686E3EB32` |
 | `brocade-fabricos-ariaops-mpb-project-1.0.0.json` | `613D95392F0DD8F8EC5B148D25A185A1983CB534CA58C929769CBDF12B1F97E7` |
-| `brocade-fabricos-ariaops-dashboards-1.0.0.8.json` | `E236A237FD8F8ED114A27110511AC4C593F3AC6540CCEB38E47164F0371D9379` |
+| `brocade-fabricos-ariaops-dashboards-1.0.0.9.json` | `78E24937DC1C7E13200138144E7531850FF017924361B556EAED04FF195E757B` |
 
 To verify all supplied artifacts in PowerShell, run this from the repository root:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath `
-  '.\PAK-Release\brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak', `
+  '.\PAK-Release\brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak', `
   '.\mp-builder\brocade-fabricos-ariaops-mpb-project-1.0.0.json', `
-  '.\mp-builder\brocade-fabricos-ariaops-dashboards-1.0.0.8.json'
+  '.\mp-builder\brocade-fabricos-ariaops-dashboards-1.0.0.9.json'
 ```
 
 These checksums identify the supplied files; they are not a vendor signature or certification.
@@ -103,7 +103,7 @@ These checksums identify the supplied files; they are not a vendor signature or 
 | Component | Version used during development | Qualification |
 | --- | --- | --- |
 | VMware Aria Operations | `8.18.3`, build `24521408` | Collector installation, collection, topology, metrics, events, and dashboard behaviour tested in the lab. |
-| Aria Management Pack Builder | `1.1.2`, build `22157532` | Used to maintain the design, embed the production dashboard content, and build PAK `1.0.0.8`. |
+| Aria Management Pack Builder | `1.1.2`, build `22157532` | Used to maintain the design, embed the production dashboard content, and build PAK `1.0.0.9`. |
 | Dell Connectrix DS-6620B / Brocade G620 profile | Switch type `162.0`, emulated FOS `v9.2.2c1` | Emulator and document validated; physical switch validation pending. |
 | Dell Connectrix DS-7720B / Brocade G720 profile | Switch type `181.5`, emulated FOS `v10.0.1` | Emulator and document validated; physical switch validation pending. |
 
@@ -138,7 +138,7 @@ Fabric OS exposes several REST-capable roles, including `user`, `operator`, `swi
 1. Download the PAK from `PAK-Release` and verify its SHA-256 checksum.
 2. Sign in to Aria Operations with management-pack installation permissions.
 3. Open the integrations repository, typically **Administration > Integrations > Repository** in Aria Operations 8.x.
-4. Add or upload `brocade-fabricos-ariaops-community-management-pack-1.0.0.8.pak`.
+4. Add or upload `brocade-fabricos-ariaops-community-management-pack-1.0.0.9.pak`.
 5. Review the package details, packaged terms, unsigned-package warning, and your organisation's policy before proceeding.
 6. Complete installation and wait for the repository workflow to finish.
 7. Open the integration accounts page and add one account per directly reachable Fabric OS switch.
@@ -161,7 +161,6 @@ The adapter kind in this release is:
 mpb_brocade_fabric_os_aria_operations_community_management_pack
 ```
 
-The installed collector baseline `1.0.0.6` was validated in the supplied lab. The final `1.0.0.8` PAK was built and passed archive, version, dashboard-equality, checksum, and credential scans, but a final install/upgrade of the packaged `1.0.0.8` bundle was not performed. Include both a fresh installation and an in-place upgrade in your acceptance testing.
 
 ## Adapter Instance Settings
 
@@ -180,7 +179,7 @@ Create one adapter account for each directly reachable switch management endpoin
 | Minimum event severity | Warning | Review against your alerting policy. |
 | Collection interval | `5` minutes | Start here and tune after observing scale, duration, and control-processor load. |
 
-The `API Base Path` field was used by the development lab to expose two emulator profiles through one bridge. Values such as `apps/g620` and `apps/g720` are lab-only and must not be copied to a physical switch account.
+The `API Base Path` field was used by the development to expose mutlipe emulator profiles through one IP connection. Values such as `apps/g620` and `apps/g720` are lab-only and must not be copied to a physical switch account.
 
 ### Credentials
 
@@ -302,7 +301,7 @@ The separate dashboard JSON can be imported without replacing the adapter:
 
 1. Open **Operations > Dashboards > Manage**.
 2. Open the more-actions menu and select **Import**.
-3. Choose `mp-builder/brocade-fabricos-ariaops-dashboards-1.0.0.8.json`.
+3. Choose `mp-builder/brocade-fabricos-ariaops-dashboards-1.0.0.9.json`.
 4. Choose **Overwrite** when replacing dashboards from this management pack, or **Rename** for a side-by-side test.
 5. Confirm all ten definitions under **All > Brocade Fabric OS**.
 
@@ -342,7 +341,7 @@ Login uses the configured Basic credential. Fabric OS returns a session authoriz
 
 ### Version Numbers and Rebuild Warning
 
-The editable design version is `1.0.0`. MP Builder combines that design version with its build counter to name generated packages. The supplied export records build number `9` because the stored counter advanced after build `1.0.0.8` was produced. A new build from the export will therefore not be byte-for-byte identical to the supplied `1.0.0.8` PAK and may receive the next build suffix.
+The editable design version is `1.0.0`. MP Builder combines that design version with its build counter to name generated packages. The supplied export records build number `9`, matching the current `1.0.0.9` build suffix. A new build from an imported export will not be byte-for-byte identical to the supplied PAK and may receive a different build suffix.
 
 The distributed PAK is also the result of verified post-build corrections required by the tested topology:
 
@@ -375,20 +374,24 @@ The ten production dashboards are embedded in both the MP Builder project export
 | G620 port-fault alert activation and recovery | PASS |
 | G720 temperature-fault alert activation and recovery | PASS |
 | Original eight-dashboard import and live interactions | PASS |
-| Three new `1.0.0.8` operational dashboards in the development folder | PASS |
+| Three operational dashboard additions in the development folder | PASS |
 | MP Builder design content: ten dashboards and zero content/design errors | PASS |
-| MP Builder build `1.0.0.8` | PASS |
+| MP Builder build `1.0.0.9` | PASS |
+| Builder-generated `design.json` and export preserved byte-for-byte in the final PAK | PASS |
 | Final PAK CRC, version metadata, root/nested dashboard equality, and checksums | PASS |
 | Supplied-secret and private-key scan | PASS, zero findings |
-| Final `1.0.0.8` production PAK install/upgrade | NOT PERFORMED |
-| Packaged ten-dashboard production JSON import | NOT PERFORMED |
+| Final `1.0.0.9` production PAK fresh installation, account creation, and discovery | PASS |
+| G620 port-health alert activation and automatic cancellation on recovery | PASS |
+| G720 environmental-sensor alert activation and automatic cancellation on recovery | PASS |
+| Standalone ten-dashboard JSON import | NOT PERFORMED; payload matches the installed PAK |
+| In-place upgrade from an earlier PAK | NOT PERFORMED |
 | Physical G620/G720 validation | NOT PERFORMED |
 
 The lab installed collector baseline discovered 78 G620-profile resources and 79 G720-profile resources. It produced one shared fabric, two switches, 128 ports, four connected endpoints, six transceivers, four environmental sensors, four power supplies, and five fans across the two accounts. These are deterministic emulator results, not expected counts for every physical fabric.
 
 Evidence classifications used by the project:
 
-- **EMULATOR-VALIDATED:** demonstrated through the deterministic emulator, MP Builder, and installed Aria Operations lab.
+- **EMULATOR-VALIDATED:** demonstrated through the emulator, MP Builder, and installed Aria Operations lab.
 - **DOCUMENT-VALIDATED:** derived from the cited Dell, Broadcom, and VMware/Broadcom material.
 - **REQUIRES REAL HARDWARE VALIDATION:** exact physical-switch responses, privileges, TLS behaviour, scale, timing, and production load.
 
@@ -403,8 +406,8 @@ Evidence classifications used by the project:
 - The PAK is unsigned and intended for community/lab acceptance before production use.
 - Counter dashboards display cumulative counts; use change over time rather than the absolute value as the operational signal.
 - The supplied Aria Operations 8.18.3 lab ignored `activeOnly=true` in its alerts API; inspect alert status when automating active-alert queries.
-- During earlier `1.0.0.7` testing, the lab Repository uploader failed at 100% for both the new PAK and an untouched installed-package control. Dashboard JSON import succeeded. The final `1.0.0.8` PAK was not resubmitted to that uploader.
-- The packaged `1.0.0.8` production dashboard JSON was not re-imported after the accepted development dashboards were promoted.
+- Release `1.0.0.9` was validated by fresh installation; an in-place upgrade from an earlier PAK was not tested.
+- The standalone `1.0.0.9` dashboard JSON was not independently imported after packaging. Its ten-dashboard payload is byte-equivalent to the root and nested dashboard payload installed with the PAK.
 
 ## Troubleshooting
 
@@ -434,7 +437,7 @@ Evidence classifications used by the project:
 ### Alerts Do Not Clear
 
 - Verify that the source Fabric OS state has returned to a healthy value.
-- Allow the configured event cancellation cycle to complete.
+- Allow multiple collection and alert-engine cycles after the source recovers. In the reference lab, the G620 port alert required three healthy collections before it cleared, while the G720 sensor alert became inactive after the first recovery collection.
 - Inspect the alert `status`; the reference lab's API ignored `activeOnly=true`.
 
 ### Dashboards Are Empty
